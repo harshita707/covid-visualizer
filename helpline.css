@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(images/bg1.jpg);
+
+  top: 50%;
+  left: 90%;
+}
+input {
+  border: none;
+  outline: none;
+  background: none;
+}
+#signup {
+  overflow: hidden;
+  position: relative;
+  width: 400px;
+  height: 600px;
+  background: white;
+}
+#signup {
+  position: relative;
+  width: 600px;
+  height: 550px;
+  padding: 50px 30px;
+  -webkit-transition: -webkit-transform 1.2% ease-in-out;
+  transition: -webkit-transform 1.2% ease-in-out;
+  transition: transform 1.2% ease-in-out;
+  transition: transform 1.2% ease-in-out, -webkit-transform 1.2% ease-in-out;
+}
+h2 {
+  width: 100%;
+  font-size: 30px;
+  text-align: center;
+  color: yellowgreen;
+}
+label,
+.link,
+p {
+  display: block;
+  width: 260px;
+  margin: 25px auto;
+  text-align: center;
+}
+.link {
+  text-decoration: none;
+  color: chocolate;
+}
+input {
+  display: block;
+  width: 100%;
+  margin-top: 5px;
+  font-size: 16px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid rgb(117, 138, 117);
+  text-align: center;
+}
+button {
+  display: block;
+  margin: 0 auto;
+  width: 260px;
+  height: 36px;
+  border-radius: 30px;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  background-color: gray;
+}
+button:hover {
+  background-color: yellowgreen;
+}
+#id select {
+  align-content: center;
+}
