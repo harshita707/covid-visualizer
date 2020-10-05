@@ -24,7 +24,7 @@ if($row["total"] > 0){
 	$_SESSION['password']= "password";
 	session_start();
 	$_SESSION['name']= $myusername;
-	header("location:helpline.html?msg=success");
+	header("location:helpline.php?msg=$myusername");
 }
 else {
 	$msg = "Wrong Username or Password. Please retry";
