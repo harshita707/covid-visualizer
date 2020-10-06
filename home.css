@@ -159,7 +159,7 @@ section .btone:hover,
 }
 .change_content:after {
   content: '';
-  animation: changetext 10s infinite linear;
+  animation: changetext 5s infinite linear;
   color: greenyellow;
 }
 @keyframes changetext {
@@ -171,6 +171,30 @@ section .btone:hover,
   }
   20% {
     content: 'AFRICA';
+  }
+  30% {
+    content: 'ITALY';
+  }
+  40% {
+    content: 'GERMANY';
+  }
+  50% {
+    content: 'SPAIN';
+  }
+  60% {
+    content: 'JAPAN';
+  }
+  70% {
+    content: 'CHINA';
+  }
+  80% {
+    content: 'CANADA';
+  }
+  90% {
+    content: 'BRAZIL';
+  }
+  100% {
+    content: 'DENMARK';
   }
 }
 footer {
