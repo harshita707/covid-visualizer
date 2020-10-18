@@ -16,7 +16,7 @@
       <div class="menu">
         <a href="home.html">Home</a>
         <a href="index.html">Cases</a>
-        <a href="news.html">News</a>
+        <a href="news.php">News</a>
         <a href="hacks.html">Hacks</a>
         <a href="helpline.php">Helpline</a>
       </div>
