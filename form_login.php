@@ -1,6 +1,6 @@
 <?php
 
-$email = $_POST["email"];
+$name = $_POST["name"];
 $password = $_POST["password"];
 $salt = "salt";
 $password_encrypted = sha1($password.$salt);
@@ -9,26 +9,23 @@ $msg ='';
 if(isset($email, $password)) {
     ob_start();
 	include('conn.php');
-	$myemail = stripslashes($email);
+	$myname = stripslashes($name);
     $mypassword = stripslashes($password);
-    $myusername = mysqli_real_escape_string($conn, $myemail);
+    $myusername = mysqli_real_escape_string($conn, $myname);
     $mypassword = mysqli_real_escape_string($conn, $mypassword);
 	
-$sql = mysqli_query($conn, "SELECT count(*) as total from signup WHERE email = '".$email."' and 
+$sql = mysqli_query($conn, "SELECT count(*) as total from signup WHERE name = '".$name."' and 
 	password = '".$password_encrypted."'");
 
 $row = mysqli_fetch_array($sql);
 
 if($row["total"] > 0){
-	$_SESSION['email']= "admin";
-	$_SESSION['password']= "password";
-	session_start();
-	$_SESSION['name']= $myusṇername;
-	header("location:helpline.php?msg=$myusername");
+	$msg = "Successful";
+	header("location:form_login.html?msg=$msg");
 }
 else {
 	$msg = "Wrong Username or Password. Please retry";
-	header("location:index.php?msg=$msg");
+	header("location:form_login.html?msg=$msg");
 }
 ob_end_flush();
 }

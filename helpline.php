@@ -42,17 +42,17 @@
       </div>
       <h4>A.2  PATIENT CATEGORY (PLEASE SELECT ONLY ONE)</h4>
       <div class="cat" style="margin-bottom: 15px;">
-        <input type="radio" name="cat[]" id="cat" value="cat1">
+        <input type="radio" name="cat" id="cat" value="cat1">
         <label for="cat1"> Symptomatic international traveller in last 14 days</label></br>
-        <input type="radio" name="cat[]" id="cat" value="cat2">
+        <input type="radio" name="cat" id="cat" value="cat2">
         <label for="cat2">Symptomatic contact of lab confirmed case</label></br>
-        <input type="radio" name="cat[]" id="cat" value="cat3">
+        <input type="radio" name="cat" id="cat" value="cat3">
         <label for="cat3"> Symptomatic healthcare worker</label></br>
-        <input type="radio" name="cat[]" id="cat" value="cat4">
+        <input type="radio" name="cat" id="cat" value="cat4">
         <label for="cat4"> Hospitalized SARI (Severe Acute Respiratory Illness) patient</label></br>
-        <input type="radio" name="cat[]" id="cat" value="cat5a">
+        <input type="radio" name="cat" id="cat" value="cat5a">
         <label for="cat5a">Asymptomatic direct and high risk contact of confirmed case – family member</label></br>
-        <input type="radio" name="cat[]" id="cat" value="cat5b">
+        <input type="radio" name="cat" id="cat" value="cat5b">
         <label for="cat5b"> Asymptomatic healthcare worker in contact with confirmed case without adequate protection</label></br>
       </div>
       <hr></br>
@@ -81,27 +81,27 @@
       <h4 >B.2 EXPOSURE HISTORY(2 WEEKS BEFORE THE ONSET OF SYMPTOMS)</h4>
       <div clas="travel" style="margin-bottom: 15px;">
         <label for="trav"> Did you travel to foreign country in last 14 days: </label>
-        <input type="radio" name="trav[]" id="trav" value="yes">
+        <input type="radio" name="trav" id="trav" value="yes">
         <label for="yes">Yes</label>
-        <input type="radio" name="trav[]" id="trav" value="no">
+        <input type="radio" name="trav" id="trav" value="no">
         <label for="no">No</label> </br> 
         <label for="fcountry">If yes, place(s) of travel: </label>
         <input type="text" id="fcountry" name="fcountry" />
       </div>
       <div clas="cpatient" style="margin-bottom: 15px;">
         <label for="pat"> Have you been in contact with lab confirmed COVID-19 patient: </label>
-        <input type="radio" name="pat[]" id="pat" value="yes">
+        <input type="radio" name="pat" id="pat" value="yes">
         <label for="yes">Yes</label>
-        <input type="radio" name="pat[]" id="pat" value="no">
+        <input type="radio" name="pat" id="pat" value="no">
         <label for="no">No</label> </br> 
         <label for="pname">If yes, name of confirmed patient:  </label>
         <input type="text" id="pname" name="pname" />
       </div>
       <div clas="quar" style="margin-bottom: 15px;">
         <label for="quar"> Were you Quarantined?: </label>
-        <input type="radio" name="quar[]" id="quar" value="yes">
+        <input type="radio" name="quar" id="quar" value="yes">
         <label for="yes">Yes</label>
-        <input type="radio" name="quar[]" id="quar" value="no">
+        <input type="radio" name="quar" id="quar" value="no">
         <label for="no">No</label> </br> 
       </div><hr>
       <br />
@@ -138,7 +138,7 @@
       </div><hr></br>
       <h4>B.4 UNDERLYING MEDICAL CONDITIONS</h4>
       <div clas="condition">
-        <label for="cond">Symptoms:</label></br>
+        <label for="cond">Conditions:</label></br>
         <input type="checkbox" name="cond[]" id="cond" value="COPD ">
         <label for="COPD ">COPD  </label></br>
         <input type="checkbox" name="cond[]" id="cond" value="Bronchitis">
